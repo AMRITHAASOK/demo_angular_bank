@@ -1,0 +1,25 @@
+<div class="wrapper">
+    <div class="logo">
+        <img src="../../assets/images/bank.png" alt="">
+    </div>
+    
+    <div class="text-center mt-4 name">
+        My Bank
+    </div>
+    <!-- <h5 style="color: rgb(255, 0, 43);">{{aim}}</h5> -->
+    <form [formGroup]="registerForm" (ngSubmit)="register()" class="p-3 mt-3">
+        <div class="form-field d-flex align-items-center">
+        <input formControlName="uname" type="text" name="uname" id="login_user" placeholder="User Name">
+        </div>
+        <div class="form-field d-flex align-items-center">
+            <input formControlName="acno" type="text" name="acno" id="login_acno" placeholder="account">
+            </div>
+        <div class="form-field d-flex align-items-center">
+            <input formControlName="pswd" type="password" name="password" id="login_pswd" placeholder="Password">
+        </div>
+        <button class="btn mt-3"  type="submit" >Register</button>
+    </form>
+    <div class="text-center fs-5 mt-3">
+        <a href="#">Existing user?</a> or <a routerLink="">login</a>
+    </div>
+</div>
